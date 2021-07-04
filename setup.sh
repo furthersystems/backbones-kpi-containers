@@ -36,14 +36,9 @@ sudo firewall-cmd --add-port=9201/tcp --permanent
 sudo firewall-cmd --add-port=9202/tcp --permanent
 sudo firewall-cmd --add-port=5601/tcp --permanent
 sudo firewall-cmd --reload
-sudo systemctl restart docker
-sudo setsebool -P httpd_can_network_connect_db off
-sudo setsebool -P httpd_can_network_connect on
 sudo rm -rf /var/lib/docker/data/fsbones/
-sudo mkdir -p /var/lib/docker/data/bones/es/usr/share/elasticsearch/data01
-sudo mkdir -p /var/lib/docker/data/bones/es/usr/share/elasticsearch/data02
-sudo mkdir -p /var/lib/docker/data/bones/es/usr/share/elasticsearch/data03
 sudo mkdir -p /var/lib/docker/data/bones/es/usr/local/scripts
+sudo mkdir -p /var/lib/docker/data/bones/es/usr/local/imports
 sudo mkdir -p /var/lib/docker/data/bones/kibana/usr/local/scripts
 sudo chcon -Ru system_u /var/lib/docker/data/bones
 sudo chcon -Rt svirt_sandbox_file_t /var/lib/docker/data/bones

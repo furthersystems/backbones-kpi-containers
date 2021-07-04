@@ -18,9 +18,9 @@ services:
         soft: -1
         hard: -1
     volumes:
-#      - /var/lib/docker/data/bones/es/usr/share/elasticsearch/data01:/usr/share/elasticsearch/data:rw
       - data01:/usr/share/elasticsearch/data
       - /var/lib/docker/data/bones/es/usr/local/scripts:/usr/local/scripts
+      - /var/lib/docker/data/bones/es/usr/local/imports:/usr/local/imports:rw
     ports:
       - 9200:9200
     networks:
@@ -41,7 +41,6 @@ services:
         soft: -1
         hard: -1
     volumes:
-#      - /var/lib/docker/data/bones/es/usr/share/elasticsearch/data02:/usr/share/elasticsearch/data:rw
       - data02:/usr/share/elasticsearch/data
       - /var/lib/docker/data/bones/es/usr/local/scripts:/usr/local/scripts
     ports:
@@ -64,7 +63,6 @@ services:
         soft: -1
         hard: -1
     volumes:
-#      - /var/lib/docker/data/bones/es/usr/share/elasticsearch/data03:/usr/share/elasticsearch/data:rw
       - data03:/usr/share/elasticsearch/data
       - /var/lib/docker/data/bones/es/usr/local/scripts:/usr/local/scripts
     ports:
