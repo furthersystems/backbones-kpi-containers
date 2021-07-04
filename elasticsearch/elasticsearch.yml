@@ -1,0 +1,7 @@
+http.host: 0.0.0.0
+network.host: 0.0.0.0
+cluster.name: elasticsearch-cluster
+cluster.initial_master_nodes: es01,es02,es03
+xpack.security.enabled: false
+xpack.graph.enabled: true
+xpack.watcher.enabled: false

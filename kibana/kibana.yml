@@ -1,0 +1,4 @@
+xpack.encryptedSavedObjects.encryptionKey:
+xpack.reporting.encryptionKey:
+xpack.reporting.kibanaServer.hostname: 0.0.0.0
+xpack.security.encryptionKey:
