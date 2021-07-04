@@ -22,9 +22,6 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-# https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html
-# https://www.elastic.co/guide/en/kibana/current/docker.html
-
 curl https://get.docker.com/ -o get-docker.sh
 sudo sh get-docker.sh
 sudo usermod -aG docker $USER
