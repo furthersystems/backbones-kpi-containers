@@ -20,7 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-FROM docker.elastic.co/elasticsearch/elasticsearch:7.13.2
+FROM docker.elastic.co/elasticsearch/elasticsearch:7.16.1
 RUN elasticsearch-plugin install analysis-kuromoji
 COPY elasticsearch.yml /usr/share/elasticsearch/config/
 COPY log4j2.properties /usr/share/elasticsearch/config/
